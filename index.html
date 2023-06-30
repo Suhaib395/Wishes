@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Happy birthday project</title>
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+ <h2>Click this card</h2>
+<div class="body">
+ <div class="birthdayCard">
+<div class="cardFront"><h3 class="happy">HAPPY BIRTHDAY!</h3>
+<div class="balloons">
+  <div class="balloonOne"></div>
+  <div class="balloonTwo"></div>
+  <div class="balloonThree"></div>
+  <div class="balloonFour"></div>
+</div>
+</div>
+<div class="cardInside">
+    <h3 class="back">HAPPY BIRTHDAY!</h3>
+    <p contenteditable="true">Dear Cutie... ,</p> 
+    <p contenteditable="true">Happy 20<sup>th</sup> birthday to you!, I wish your day is filled with lots of love and happiness! May Allah fulfil all your wishes...,.................,..................,..............................................</p>
+    <p contenteditable="true" class="name">Someone Unknown.</p>
+  </div>
+  
+</div>
+</div>
+<!-- <footer><center>Design & Develop by <a href="https://praweensoni.netlify.app/">PK'S</a></center>
+</footer> -->
+<script src="confetii.js"></script>
+<script>
+
+    const startit = () => {
+        setTimeout(function () {
+            console.log("start");
+            confetti.start();
+        }, 1000);
+    };
+
+    const stopit = () => {
+        setTimeout(function () {
+            console.log("stop");
+            confetti.stop();
+        }, 10000);
+    };
+
+    startit();
+    stopit();
+</script>  
+</body>
+</html>
